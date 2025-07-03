@@ -1,0 +1,45 @@
+#titulo-pinturas{
+    text-align: center;
+}
+
+#div-pinturas {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    box-sizing: border-box;
+    /* border: solid 2px yellow; */
+    /* margin: 1rem; */
+}
+
+.box-class{
+    border: solid 2px ;
+    margin: 0.5rem auto;
+    padding: 1rem;
+    justify-items: center;
+    cursor: pointer;
+}
+
+.pinturas-class-1,
+.pinturas-class-2 {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .pinturas-class-1,
+    .pinturas-class-2 {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pinturas-class-1,
+    .pinturas-class-2 {
+        max-width: 200px;
+    }
+    }
+

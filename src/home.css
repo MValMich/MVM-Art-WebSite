@@ -1,0 +1,45 @@
+.div-home {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    /* Se ajusta automáticamente a partir de 200px */
+    gap: 1rem;
+     /* Utiliza "rem" en lugar de porcentaje para una mayor consistencia */
+    /* border: solid 1px yellow; */
+    padding: 1rem; 
+    /* Agrega un poco de espacio alrededor de los elementos */
+}
+
+.div-img-home {
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    /* border: solid 1px; */
+    box-sizing: border-box; /* Evita que los bordes y el relleno aumenten el tamaño del contenedor */
+}
+
+.img-home {
+    width: 100%; 
+    height: auto; /* Mantiene la proporción de la imagen */
+    border: solid 1px;
+}
+
+.div-presentacion {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    border: solid 1px;
+    margin-bottom: 1rem;
+    position: relative;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+
+/* Media Queries para dispositivos pequeños */
+@media (max-width: 600px) {
+    .div-home {
+        grid-template-columns: 1fr;
+         /* Coloca los elementos en una sola columna en pantallas pequeñas */
+        gap: 0.5rem;
+    }
+    
+    .presentacion {
+        margin-bottom: 10%;
+    }
+}
