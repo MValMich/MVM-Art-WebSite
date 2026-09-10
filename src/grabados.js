@@ -73,8 +73,17 @@ function createGrabadoBox(grabado) {
 // CREAR TÍTULO Y CONTENEDOR
 const tituloGrabadosTela = document.createElement('div')
       tituloGrabadosTela.id = 'titulo-grabados-tela'
-      tituloGrabadosTela.innerHTML = 
-'<h2>"Grabados en Tela Negra"</h2> <p>Técnicas mixtas (manuales y digitales).<br> Colección limitada de 50 obras (a color y en sepia).<br> Para valores y medios de pago, contactanos a: <p>'    
+      const h2Grabados = document.createElement('h2')
+      h2Grabados.textContent = '"Grabados en Tela Negra"'
+      const pGrabados = document.createElement('p')
+      pGrabados.append(
+        'Técnicas mixtas (manuales y digitales).',
+        document.createElement('br'),
+        'Colección limitada de 50 obras (a color y en sepia).',
+        document.createElement('br'),
+        'Para valores y medios de pago, contactanos a: '
+      )
+      tituloGrabadosTela.append(h2Grabados, pGrabados)    
             
 const divGrabadosTela = document.createElement('div')
       divGrabadosTela.id = 'div-grabados-tela'

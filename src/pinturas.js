@@ -63,8 +63,11 @@ function createPinturaBox(pintura) {
 // CREAR TÍTULO Y CONTENEDOR
 const tituloPinturas = document.createElement('div')
       tituloPinturas.id = 'titulo-pinturas'
-      tituloPinturas.innerHTML = '<h2>"Óleos a la Veladura"</h2> <p>Para valores y medios de pago, contactanos a: <p>'    
-
+      const h2 = document.createElement('h2')
+      h2.textContent = '"Óleos a la Veladura"'
+      const p = document.createElement('p')
+      p.textContent = 'La técnica del óleo a la veladura fue desarrollada en Europa en tiempos del Renacimiento, utilizadas por los grandes maestros de la pintura como Leonardo Da Vinci y Jan van Eyck entre otros.'
+      tituloPinturas.append(h2, p)    
 const divPinturas = document.createElement('div')
       divPinturas.id = 'div-pinturas'
       divPinturas.classList.add('div-pinturas-class')
