@@ -12,7 +12,7 @@ const btn_2 = document.createElement('button')
 
 const div_Biografia = document.createElement('div')
       div_Biografia.classList.add('div-bio-expo')
-import biografiaImg from './img/Martin-Taller-Editada.jpg' 
+import biografiaImg from './img/Martin-Taller.jpg' 
 const divImgBiografia = document.createElement('div')
 const imgBiografia = document.createElement('img')
             imgBiografia.src = biografiaImg
